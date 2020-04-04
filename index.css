@@ -1,0 +1,116 @@
+body{
+    margin: 0 auto;
+    font-family: marvel;
+}
+
+/*Navigation Bar*/
+.Navigation_Bar{
+    align-items: center;
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    margin:0;    
+}
+
+.Button{
+    color: white;
+    font-size: 32px;
+    margin-left: 120px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.Button:hover{
+    text-decoration: underline;
+    transform:scale(1.1);
+}
+
+/*Picture Carrousel*/
+.PictureCarrousel{
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    border: solid 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0px;  
+    height:60vh;
+}
+
+.Pictures{
+    transition: all 1s;
+    width: 38rem;
+}
+
+.Pictures:hover{
+    border: solid black 4px;
+    border-radius: 5px;
+    transform:scale(1.1);
+    width: 40rem;
+}
+
+.Back,.Next{
+    margin: 10px;
+    transition: all 1s;
+    width: 4rem;
+}
+
+.Back:hover{
+    transform:scale(1.1)rotate(-20deg);
+}
+
+.Next:hover{
+    transform:scale(1.1)rotate(20deg);
+}
+
+.Picture_Before{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: solid black 2px;
+    padding: 130px;
+    transition: all 0.75s;
+}
+
+.Picture_After{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: solid black 2px;
+    margin: -10px;
+    padding: 130px;
+    transition: all 0.75s;
+}
+
+.Presentation {
+    background-color: dodgerblue;
+    border: solid 2px black;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    
+}
+
+.Presentation_Element{
+    background-color: white;
+    border: solid black 2px;
+    margin: 20px;
+    padding: 130px;
+    transition: all 0.75s;
+}
+
+.Presentation_Element:hover{
+    transform:scale(1.1);
+}
+
+/*Footer*/
+footer{
+    color: white;
+    height: auto;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+}
+
+
